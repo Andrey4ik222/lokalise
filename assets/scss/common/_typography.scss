@@ -1,3 +1,6 @@
+@use "../presets/" as *;
+@use "../mixins/" as *;
+
 *,
 *::before,
 *::after {
@@ -5,10 +8,13 @@ box-sizing: border-box;
 }
 
 html {
-  font-size: 16px;
+  font-size: $font-size;
+  font-family: $font-primary;
+  font-weight: 400;
 }
 
 body {
+  font-size: 15px;
 }
 
 a {
