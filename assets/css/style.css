@@ -211,7 +211,13 @@ a {
   margin-inline: auto;
 }
 
+.container--sm {
+  max-width: 620px;
+}
+
 .header {
+  margin-bottom: 130px;
+
   border-bottom: 1px solid #cccccc;
 }
 .header-menu {
@@ -241,8 +247,6 @@ a {
   min-height: 45px;
 }
 .btn--light {
-  margin-right: 6px;
-
   border: 1px solid #cccccc;
   background-color: #ffffff;
 }
@@ -265,4 +269,47 @@ a {
 }
 .havbar__link {
   padding: 5px;
+}
+
+.content-main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.main-info {
+  margin-bottom: 174px;
+}
+.main-info__title {
+  margin: 0;
+  padding-bottom: 51px;
+
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.07;
+}
+.main-info__description {
+  max-width: 471px;
+  margin: 0;
+  padding-bottom: 50px;
+
+  font-size: 1.56em;
+  line-height: 1.4;
+}
+.main-info__help {
+  margin: 0;
+  padding-top: 25px;
+
+  line-height: 1.4;
+}
+
+.btn {
+  margin-right: 6px;
+}
+.btn--lg {
+  min-width: 160px;
+  min-height: 60px;
 }

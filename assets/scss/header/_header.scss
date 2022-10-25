@@ -3,6 +3,7 @@
 
 .header{
   border-bottom: 1px solid $color-grey;
+margin-bottom: 130px;
   &-menu{
     padding-top: 35px;
     padding-bottom: 30px;
@@ -26,7 +27,6 @@
  &--light{
   background-color: $color-white;
   border: 1px solid $color-grey;
- margin-right: 6px;
  }
  &--accent{
   background-color: $color-accent;
