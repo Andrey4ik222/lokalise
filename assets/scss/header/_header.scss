@@ -4,8 +4,8 @@
 .header{
   border-bottom: 1px solid $color-grey;
   &-menu{
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 35px;
+    padding-bottom: 30px;
     display: flex;
     gap: $gap-md;
     align-items: center;
@@ -17,4 +17,19 @@
   &__actions{
     margin-left: auto;
   }
+}
+.btn{
+ &--sm{
+  min-width: 120px;
+  min-height: 45px;
+ }
+ &--light{
+  background-color: $color-white;
+  border: 1px solid $color-grey;
+ margin-right: 6px;
+ }
+ &--accent{
+  background-color: $color-accent;
+  border: 0;
+ }
 }
