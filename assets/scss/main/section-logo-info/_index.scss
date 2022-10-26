@@ -1,0 +1,30 @@
+@use "../../presets/" as *;
+@use "../../mixins/" as *;
+
+.logo-info{
+  background-color: $color-accent-light;
+  padding-top: 100px;
+  margin-bottom: 90px;
+  &__title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: $line-height-md;
+    max-width: 740px;
+    margin-top: 0;
+    margin-bottom: 60px;
+    
+  }
+  &__list{
+    display: flex;
+    justify-content: center;
+    gap: 103px;
+    align-items: center;
+    padding-bottom: 104px;
+  }
+}
+.container__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

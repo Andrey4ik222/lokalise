@@ -2,4 +2,5 @@
 
 @use "common";
 @use "header/" as *;
-@use "main/section1/" as *;
+@use "main/section-main-info" as *;
+@use "main/section-logo-info" as *;
