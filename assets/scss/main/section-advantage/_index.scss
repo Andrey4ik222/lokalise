@@ -1,0 +1,42 @@
+@use "../../presets/" as *;
+@use "../../mixins/" as *;
+
+
+.container-advantage{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 250px;
+}
+.advantage-content{
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: $gap-lg;
+  &__title{
+    max-width: 493px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: $line-height-md;
+    margin: 0;
+  }
+  &__description{
+    max-width: 493px;
+    margin: 0;
+font-size: 20px;
+line-height: 1.5;
+    &--sm{
+      max-width: 493px;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-top: 10px;
+    }
+
+  }
+}
+.advantage-picture{
+  max-width: 50%;
+}
+.advantare__picture--reverse{
+  order: -1;
+}
