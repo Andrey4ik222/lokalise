@@ -1,0 +1,26 @@
+@use "../../presets/" as *;
+@use "../../mixins/" as *;
+
+.grade{
+  background-color: $color-brown-light;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &-wrapper{
+    display: grid;
+    grid-template-columns: 64% 36%;
+  }
+  &-item{
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    justify-content: center;
+    &--border{
+      border-right: 1px solid;
+    }
+    &__title{
+      font-weight: 600;
+      font-size: 35px;
+      line-height: $line-height-lg;
+    }
+  }
+}
