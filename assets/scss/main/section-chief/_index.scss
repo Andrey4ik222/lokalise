@@ -1,0 +1,25 @@
+@use "../../presets/" as *;
+@use "../../mixins/" as *;
+
+.chief{
+  background-color: $color-blue-light;
+  &-wrapper{
+    display: flex;
+    gap: $gap;
+    padding-top: 55px;
+    padding-bottom: 95px;
+  }
+  &__description{
+    font-size: 30px;
+    line-height: $line-height-xl;
+    max-width: 920px;
+    margin-top: 0;
+    margin-bottom: 22px;
+  }
+  &-info{
+    &__title{
+      line-height: $line-height-xxl;
+      margin-bottom: 5px;
+    }
+  }
+}
