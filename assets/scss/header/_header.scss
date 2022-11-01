@@ -3,13 +3,27 @@
 
 .header{
   border-bottom: 1px solid $color-grey;
-margin-bottom: 130px;
+  @include lg-min{
+  margin-bottom: 130px;
+  }
+  @include md-min{
+    margin-bottom: 100px;
+    }
+    @include xs-min{
+      margin-bottom: 75px;
+      }
+      @include xs{
+        margin-bottom: 40px;
+        }
   &-menu{
     padding-top: 35px;
     padding-bottom: 30px;
     display: flex;
     gap: $gap-md;
     align-items: center;
+    @include xs{
+      flex-wrap: wrap;
+    }
     &__logo{
       padding-right: 51px;
       text-align: center;
@@ -17,16 +31,33 @@ margin-bottom: 130px;
   }
   &__actions{
     margin-left: auto;
+    @include xs{
+      margin-right: auto;
+    }
   }
 }
 .btn{
  &--sm{
-  min-width: 120px;
-  min-height: 45px;
+  @include md-min{
+    min-width: 120px;
+    min-height: 45px;
+  }
+  @include md{
+    min-width: 100px;
+    min-height: 35px;
+  }
+  @include xs{
+    min-width: 85px;
+    min-height: 30px;
+  }
  }
  &--light{
   background-color: $color-white;
   border: 1px solid $color-grey;
+  @include xl {
+  margin-bottom: 10px;
+  }
+
  }
  &--accent{
   background-color: $color-accent;
