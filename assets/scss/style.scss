@@ -2,11 +2,11 @@
 
 @use "common";
 @use "header/" as *;
-@use "main/section-main-info" as *;
-@use "main/section-logo-info" as *;
-@use "main/section-advantage" as *;
-@use "main/section-capabilities" as *;
-@use "main/section-productivity" as *;
-@use "main/section-chief" as *;
-@use "main/section-grade" as *;
+@use "main/main-info" as *;
+@use "main/logo-info" as *;
+@use "main/advantage" as *;
+@use "main/capabilities" as *;
+@use "main/productivity" as *;
+@use "main/chief" as *;
+@use "main/grade" as *;
 
