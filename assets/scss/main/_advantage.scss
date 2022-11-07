@@ -6,6 +6,15 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 250px;
+  gap: $gap;
+  @include xl{
+    margin-bottom: 150px;
+  }
+  @include md{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 75px;
+  }
 }
 .advantage-content{
   max-width: 50%;
@@ -13,29 +22,68 @@
   flex-direction: column;
   justify-content: center;
   gap: $gap-lg;
+  @include xs{
+    gap: $gap-xs;
+  }
   &__title{
     max-width: 493px;
     font-weight: 600;
     font-size: 50px;
     line-height: $line-height-md;
     margin: 0;
+    @include lg{
+      font-size: 30px;
+    }
+    @include xs{
+      font-size: 25px;
+    }
   }
   &__description{
     max-width: 493px;
     margin: 0;
 font-size: 20px;
 line-height: 1.5;
+@include lg{
+  font-size: 15px;
+}
+@include xs{
+  font-size: 10px;
+}
     &--sm{
       max-width: 493px;
       font-weight: 600;
       line-height: 1.5;
       margin-top: 10px;
+      @include lg{
+        font-size: 15px;
+      }
+      @include xs{
+        font-size: 10px;
+      }
     }
 
   }
 }
-.advantage-picture{
-  max-width: 50%;
+.advantare__picture{
+@include xl{
+  max-width: 450px;
+max-height: 450px;
+}
+@include md{
+  max-width: 350px;
+  max-height: 350px;
+  order: -1;
+}
+}
+.advantare__image{
+@include xl{
+  max-width: 450px;
+max-height: 450px;
+}
+@include md{
+  max-width: 350px;
+  max-height: 350px;
+}
 }
 .advantare__picture--reverse{
   order: -1;

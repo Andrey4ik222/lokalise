@@ -13,14 +13,24 @@
     max-width: 740px;
     margin-top: 0;
     margin-bottom: 60px;
+    @include lg{
+      font-size: 30px;
+    }
+    @include xs{
+      font-size: 25px;
+    }
     
   }
   &__list{
     display: flex;
     justify-content: center;
-    gap: 103px;
     align-items: center;
+    gap: 103px;
     padding-bottom: 104px;
+    @include ul{
+      flex-wrap: wrap;
+      row-gap: 50px;
+    }
   }
 }
 .container__title{

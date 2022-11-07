@@ -12,6 +12,12 @@
     align-items: center;
     align-self: center;
     padding-bottom: 53px;
+    @include lg{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include xs{
+      grid-template-columns: 1fr;
+    }
   }
   &__item{
     display: flex;
@@ -26,6 +32,12 @@ line-height: $line-height-md;
 text-align: center;
 padding-top: 120px;
 margin-bottom: 78px;
+@include lg{
+  font-size: 30px;
+}
+@include xs{
+  font-size: 27px;
+}
   }
 }
 .capabilities-item{
@@ -34,6 +46,16 @@ margin-bottom: 78px;
     font-size: 25px;
     line-height: $line-height-xl;
     margin: 0;
+    @include xl{
+      font-size: 1.3em;
+    }
+    @include lg{
+      font-size: 1em;
+    }
+    @include md{
+      font-size: 1em;
+
+    }
   }
   &__description{
     font-size: 18px;
@@ -41,5 +63,11 @@ margin-bottom: 78px;
     margin: 0;
     text-align: center;
     max-width: 303px;
+    @include lg{
+  font-size: 15px;
+}
+@include xs{
+  font-size: 10px;
+}
   }
 }
