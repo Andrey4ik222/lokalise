@@ -8,6 +8,9 @@
   &-wrapper{
     display: grid;
     grid-template-columns: 64% 36%;
+    @include xl{
+      grid-template-columns: 55% 45%; 
+    }
   }
   &-item{
     display: flex;
@@ -17,10 +20,48 @@
     &--border{
       border-right: 1px solid;
     }
+    @include lg{
+      flex-wrap: wrap;
+      gap: $gap;
+      justify-content: center;
+    }
     &__title{
       font-weight: 600;
       font-size: 35px;
       line-height: $line-height-lg;
+      @include xl{
+        font-size: 30px; 
+      }
+      @include lg{
+        font-size: 30px;
+        text-align: center;
+      }
+      @include xx{
+        font-size: 25px;
+        text-align: center;
+      }
+      @include ux{
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+    &__image{
+      @include md{
+        width: 150px;
+      }
+      @include xx{
+        width: 115px;
+      }
+      &-star-first{
+        @include xx{
+          width: 115px;
+        }
+      }
+      &-star-second{
+        @include xx{
+          width: 115px;
+        }
+      }
     }
   }
 }

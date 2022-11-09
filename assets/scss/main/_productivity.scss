@@ -9,12 +9,24 @@
     line-height: $line-height-md;
     margin-top: 155px;
     margin-bottom: 25px;
+    @include lg{
+      font-size: 30px;
+    }
+    @include xs{
+      font-size: 27px;
+    }
   }
   &-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
     margin-bottom: 90px;
+    @include lg{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include xs{
+      grid-template-columns: 1fr;
+    }
   }
 
   &-item{
@@ -24,6 +36,12 @@
       font-weight: 600;
       font-size: 30px;
       line-height: $line-height-xl;
+      @include xl{
+        font-size: 25px;
+      }
+      @include lg{
+        font-size: 20px;
+      }
     }
     &__description{
       max-width: 409px;
@@ -31,6 +49,12 @@
       line-height: $line-height-lg;
       margin-bottom: 30px;
       margin-top: 5px;
+      @include lg{
+        font-size: 18px;
+      }
+      @include xs{
+        font-size: 13px;
+      }
       &__link{
         border-bottom: 1px solid $color-primary;
       }
@@ -53,6 +77,12 @@
       font-size: 20px;
       line-height: $line-height-lg;
       border-bottom: 1px solid $color-primary;
+      @include lg{
+        font-size: 18px;
+      }
+      @include xs{
+        font-size: 13px;
+      }
     }
   }
 }
