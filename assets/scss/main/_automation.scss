@@ -59,14 +59,14 @@
   }
 }
 .btn--xl{
-  padding: 22px 28px;
+  padding: 14px 48px;
   @include lg{
     padding: 18px 24px;
   }
   @include md{
-    padding: 12px 18px;
+    padding: 0px 18px;
   }
   @include xx{
-    padding: 6px 12px;
+    padding: 0px 12px;
   }
 }

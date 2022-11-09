@@ -1,0 +1,64 @@
+@use "../presets/" as *;
+@use "../mixins/" as *;
+
+.secondary-info{
+  background-color: $color-accent-light;
+  padding-top: 64px;
+padding-bottom: 144px;
+  &__title{
+    max-width: 900px;
+    font-weight: 600;
+font-size: 65px;
+line-height: $line-height-md;
+margin-inline: auto;
+text-align: center;
+margin-bottom: 33px;
+@include xl{
+  font-size: 57px;
+}
+@include lg{
+  font-size: 50px;
+}
+@include md{
+  font-size: 43px;
+}
+@include xx{
+  font-size: 35px;
+}
+  }
+  &__description{
+    max-width: 440px;
+    font-size: 20px;
+    line-height: $line-height-lg;
+    margin-inline: auto;
+    text-align: center;
+    margin-bottom: 56px;
+    @include xl{
+      font-size: 17px;
+    }
+    @include lg{
+      font-size: 14px;
+    }
+    @include md{
+      font-size: 11px;
+    }
+    @include xx{
+      font-size: 9px;
+    }
+  }
+}
+.btn--dark{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: $color-primary;
+  color: $color-white;
+  border: 0;
+}
+.btn--description{
+  font-weight: 600;
+font-size: 17px;
+line-height: 60px;
+margin-top: 9px;
+margin-bottom: 9px;
+}
