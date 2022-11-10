@@ -24,6 +24,18 @@
         margin-right: 0;
       }
     }
+    &__description{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: $line-height-md;
+      margin-top: 0;
+      @include lg{
+        font-size: 9px;
+      }
+      @include md{
+        font-size: 7px;
+      }
+    }
   }
   &-copy{
     &__copyright{
@@ -39,28 +51,16 @@
         }
     }
     &__description{
+      max-width: 300px;
       font-weight: 400;
-font-size: 12px;
-line-height: $line-height-md;
-      margin-top: 0;
+      font-size: 12px;
+      line-height: $line-height-md;
       @include lg{
         font-size: 9px;
       }
       @include md{
         font-size: 7px;
       }
-    }
-  }
-  &__description{
-    max-width: 300px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: $line-height-md;
-    @include lg{
-      font-size: 9px;
-    }
-    @include md{
-      font-size: 7px;
     }
   }
 }
