@@ -38,6 +38,8 @@
 }
 .btn{
  &--sm{
+  min-width: 160px;
+  min-height: 60px;
   @include md-min{
     min-width: 120px;
     min-height: 45px;
